@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platiza</title>
+</head>
+
+<body>
+  <header class="header container">
+    <a class="header__link" href="#">
+      <img class="header__logo" src="./images/logo/logo.png" alt="Platiza" width="94" height="40">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" target="_blank">О компании</a>
+        </li>
+        <li class="header__item">
+          <a href="#" target="_blank">Как получить деньги</a>
+        </li>
+        <li class="header__item">
+          <a href="#" target="_blank">Как погасить заём</a>
+        </li>
+        <li class="header__item">
+          <a href="#" target="_blank">Зарплата вперед</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__button button">войти</button>
+  </header>
+
+  <main class="main container">
+    <section class="promo">
+      <div class="promo__inner">
+        <h1 class="promo__title">Первый заём с промокодом "ZERO" - бесплатно! *</h1>
+        <p class="promo__slogan">ZERO — значит <span>0!</span></p>
+        <p class="promo__text">(активируйте промокод в Вашем Личном кабинете)</p>
+      </div>
+
+      <form action="#">
+        <button>Первый заём</button>
+        <button>Повторный заём</button>
+
+        <label for="sum">Сумма</label>
+        <input id="sum" type="number" name="LoanAmount" placeholder="рублей"
+          oninput="resultSum.value = (parseInt(LoanAmount.value))">
+
+        <label for="">На срок</label>
+        <input type="number" placeholder="дней">
+
+        <p>Вы берете</p>
+        <output for="sum" name="resultSum"></output>
+
+        <p>Срок погашения</p>
+        <input type="date">
+
+        <p>Сумма к возврату</p>
+        <output></output>
+
+        <a href="#">Как не допустить просроченный задолженности</a>
+        <a href="#">Требования к заемщикам</a>
+
+        <p>Расчет носит ознакомительный характер</p>
+        <p>Окончательные условия будут определены при подаче заявки в ЛК</p>
+
+        <button>Подать заявку</button>
+      </form>
+    </section>
+    <section>
+      <h2>Наши преимущества</h2>
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <p><span>90%</span>одобрения</p>
+            <button>подать заявку</button>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <p>Деньги за 1 минуту после одобрения</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <p>Продление без штрафов</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <p>Безопасность персональных данных</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <p>Погашение займа 24 часа Без комиссии</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <p>Премиум услуги для постоянных клиентов</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <p>Улучшение кредитной истории</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Получите заём просто</h2>
+      <dl>
+        <dt>Позвоните или оставьте заявку</dt>
+        <dd>Оставить заявку можно <a href="#">заполнив форму</a> на сайте</dd>
+        <dt>Дождитесь принятия решения</dt>
+        <dd>Решение принимается всего за 1 минуту</dd>
+        <dt>Получите деньги</dt>
+        <dd>Мы переведем Вам деньги на карту</dd>
+      </dl>
+      <button>оформить заявку</button>
+    </section>
+    <section>
+      <h2>Как погасить заём</h2>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Способ погашения</th>
+            <th colspan="2">Зачисление</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th><img src="./images/paymentSystem/1.png" alt="Логотип банковских карт Visa/MasterCard/Мир"></th>
+            <th>Банковской картой Visa/MasterCard/Мир в личном кабинете</th>
+            <th>Моментально</th>
+            <th><button>погасить</button></th>
+          </tr>
+          <tr>
+            <th><img src="./images/paymentSystem/2.png" alt="Логотип терминала Qiwi"></th>
+            <th>Через терминалы Qiwi</th>
+            <th>Моментально</th>
+            <th><button>Скоро</button></th>
+          </tr>
+          <tr>
+            <th><img src="./images/paymentSystem/3.png" alt="Логотип терминала CyberPlat"></th>
+            <th>Через терминалы CyberPlat</th>
+            <th>Моментально</th>
+            <th><button>Скоро</button></th>
+          </tr>
+          <tr>
+            <th><img src="./images/paymentSystem/4.png" alt="Логотип платежной системы Золотая корона"></th>
+            <th>Через платежную систему "Золотая корона"</th>
+            <th>Моментально</th>
+            <th><button>Скоро</button></th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Получить заём прямо сейчас</h2>
+    </section>
+    <section>
+      <h2>Часто задаваемые вопросы</h2>
+      <details>
+        <summary>Как мне оформить микрозайм</summary>
+      </details>
+      <details>
+        <summary>Что будет, если я просрочу платеж</summary>
+      </details>
+      <details>
+        <summary>Как мне оформить микрозайм</summary>
+      </details>
+      <details>
+        <summary>Что будет, если я просрочу платеж</summary>
+      </details>
+      <details>
+        <summary>Как погасить займ</summary>
+      </details>
+      <details>
+        <summary>Могу ли я продлить платежи</summary>
+      </details>
+      <details>
+        <summary>Как погасить займ</summary>
+      </details>
+      <details>
+        <summary>Могу ли я продлить платежи</summary>
+      </details>
+    </section>
+    <section>
+      <h2>Публикации</h2>
+      <article>
+        <h3>Зарплата вперед - новый сервис от Platiza.ru</h3>
+        <p>МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и продукта Зарплатный</p>
+        <a href="#">platiza.ru</a>
+      </article>
+      <article>
+        <h3>Зарплата вперед - новый сервис от Platiza.ru</h3>
+        <p>МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и продукта Зарплатный</p>
+        <a href="#">platiza.ru</a>
+      </article>
+      <article>
+        <h3>Зарплата вперед - новый сервис от Platiza.ru</h3>
+        <p>МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и продукта Зарплатный</p>
+        <a href="#">platiza.ru</a>
+      </article>
+    </section>
+    <section>
+      <h2>Какие у нас займы</h2>
+      <div>
+        <a href="#">Займ до 200 000 тенге</a>
+        <a href="#">Автозайм</a>
+        <a href="#">Под залог недвижимости</a>
+      </div>
+      <p>
+        Platiza — это популярный российский онлайн-сервис мгновенной финансовой помощи. Здесь можно за минуту получить
+        заём на небольшую сумму без похода в офис, справок с работы, имея под рукой только паспорт и телефон.
+      </p>
+      <p>
+        Мы предоставляем надёжное и безопасное решение людям, оказавшимся в экстренных финансовых ситуациях. Внедряя
+        эффективные технологии, мы создали сервис, который стал персональным финансовым помощником для всех наших
+        клиентов.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&COPY; 2011–2020 Микрокредитная компания «Платиза.ру» (общество с ограниченной ответственностью).</p>
+    <p>Все права защищены.</p>
+  </footer>
+
+</body>
+
+</html>
