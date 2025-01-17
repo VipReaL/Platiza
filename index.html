@@ -39,25 +39,45 @@
         <p class="promo__text">(активируйте промокод в Вашем Личном кабинете)</p>
       </div>
 
-      <form action="#">
-        <button>Первый заём</button>
-        <button>Повторный заём</button>
+      <form name="form" method="post" enctype="multipart/form-data" action="mailto:Vip.Igoshin@yandex.ru">
+        <label for="firstLoan">Первый заём</label>
+        <input id="firstLoan" name="loan" type="radio" value="firstLoan" checked>
+
+        <label for="repeatLoan">Повторный заём</label>
+        <input id="repeatLoan" name="loan" type="radio" value="repeatLoan">
 
         <label for="sum">Сумма</label>
-        <input id="sum" type="number" name="LoanAmount" placeholder="рублей"
-          oninput="resultSum.value = (parseInt(LoanAmount.value))">
+        <output for="sum" name="resultSum">5000</output>
+        <input
+          id="sum"
+          name="LoanAmount"
+          placeholder="рублей"
+          type="range"
+          min="1000"
+          max="100000"
+          value="5000"
+        >
 
-        <label for="">На срок</label>
-        <input type="number" placeholder="дней">
+        <label for="ForPeriod">На срок</label>
+        <output for="ForPeriod" name="numberDays">10</output>
+        <input
+          id="ForPeriod"
+          name="numberOfDays"
+          placeholder="дней"
+          type="range"
+          min="1"
+          max="30"
+          value="10"
+        >
 
         <p>Вы берете</p>
-        <output for="sum" name="resultSum"></output>
+        <output for="sum2" name="resultSum2">5000</output>
 
         <p>Срок погашения</p>
         <input type="date">
 
         <p>Сумма к возврату</p>
-        <output></output>
+        <output for="sum3" name="AmountRefunded">5000</output>
 
         <a href="#">Как не допустить просроченный задолженности</a>
         <a href="#">Требования к заемщикам</a>
@@ -65,7 +85,7 @@
         <p>Расчет носит ознакомительный характер</p>
         <p>Окончательные условия будут определены при подаче заявки в ЛК</p>
 
-        <button>Подать заявку</button>
+        <button type="submit">Подать заявку</button>
       </form>
     </section>
     <section>
