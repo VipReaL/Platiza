@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platiza</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/promo.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header container">
     <a class="header__link" href="#">
       <img class="header__logo" src="./images/logo/logo.png" alt="Platiza" width="94" height="40">
@@ -39,7 +42,7 @@
         <p class="promo__text">(активируйте промокод в Вашем Личном кабинете)</p>
       </div>
 
-      <form name="form" method="post" enctype="multipart/form-data" action="mailto:Vip.Igoshin@yandex.ru">
+      <form class="form" name="form" method="post" enctype="multipart/form-data" action="mailto:Vip.Igoshin@yandex.ru">
         <label for="firstLoan">Первый заём</label>
         <input id="firstLoan" name="loan" type="radio" value="firstLoan" checked>
 
